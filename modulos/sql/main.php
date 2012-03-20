@@ -1,0 +1,67 @@
+<?php
+
+function antinject($sql){
+$sql=str_replace("\"","&quot;",$sql);
+$sql=str_replace("\'","&#39;",$sql);
+return $sql;
+}
+
+function conexion(){
+$con=mysql_connect("localhost","root");
+mysql_select_db("anua", $con);
+return $con;
+}
+///////////////////////////////////////////////////////////
+function getq($sql){
+/*
+$sql=str_replace("Ñ","&Ntilde;",$sql);
+$sql=str_replace("À","&Agrave;",$sql);
+$sql=str_replace("Á","&Aacute;",$sql);
+$sql=str_replace("È","&Egrave;",$sql);
+$sql=str_replace("É","&Eacute;",$sql);
+$sql=str_replace("Ì","&Igrave;",$sql);
+$sql=str_replace("Í","&Iacute;",$sql);
+$sql=str_replace("Ò","&Ograve;",$sql);
+$sql=str_replace("Ó","&Oacute;",$sql);
+$sql=str_replace("Ù","&Ugrave;",$sql);
+$sql=str_replace("Ú","&Uacute;",$sql);
+$sql=str_replace("ñ","&ntilde;",$sql);
+$sql=str_replace("à","&agrave;",$sql);
+$sql=str_replace("á","&aacute;",$sql);
+$sql=str_replace("è","&egrave;",$sql);
+$sql=str_replace("é","&eacute;",$sql);
+$sql=str_replace("ì","&igrave;",$sql);
+//$sql=str_replace("í","&iacute;",$sql);
+$sql=str_replace("ò","&ograve;",$sql);
+$sql=str_replace("ó","&oacute;",$sql);
+$sql=str_replace("ù","&ugrave;",$sql);
+$sql=str_replace("ú","&uacute;",$sql);
+$sql=str_replace("Ã³","&oacute;",$sql);
+$sql=str_replace("Ã©","&eacute;",$sql);
+$sql=str_replace("Ã","&iacute;",$sql);
+$sql=str_replace("íº","&uacute;",$sql);
+$sql=str_replace("zxczxc","&aacute;",$sql);
+*/
+$con=conexion();
+return mysql_query($sql,$con);
+}
+//////////////////////////////////////////////////////////
+function query($sql){
+$query=getq($sql);
+$array=array();
+if(!(is_bool($query))){
+$i=0;
+while($row=mysql_fetch_array($query)){
+$array[$i]=$row;
+$i++;
+}
+}
+
+return $array;
+}
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+function prueba(){
+echo "ok";
+}
+?>

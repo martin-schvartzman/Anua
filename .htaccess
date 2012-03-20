@@ -1,0 +1,11 @@
+#deny from all
+Options +FollowSymLinks
+Options +Indexes
+DirectoryIndex index.php
+RewriteEngine on
+#RewriteRule ^album/([0-9]+)/[A-Z|a-z|0-9|\-]+.html$ \index.php?categoria=album&id=$1&file=x/as/.php
+RewriteRule ^categoria/([0-9]+)/[A-Z|a-z|0-9|\-]+.html_([0-9]+)$ \index.php?id=$1&fileinclude=categoria&pag=$2
+RewriteRule ^sub-[A-Z|a-z|0-9|\-]+/([0-9]+)/[A-Z|a-z|0-9|\-]+.html_([0-9]+)$ \index.php?id=$1&fileinclude=subcategoria&pag=$2
+RewriteRule ^categoria/([0-9]+)/[A-Z|a-z|0-9|\-]+.html$ \index.php?id=$1&fileinclude=categoria&pag=0
+RewriteRule ^sub-[A-Z|a-z|0-9|\-]+/([0-9]+)/[A-Z|a-z|0-9|\-]+.html$ \index.php?id=$1&fileinclude=subcategoria&pag=0
+RewriteRule ^[A-Z|a-z|0-9|\-]+/post/([0-9]+)/[A-Z|a-z|0-9|\-]+.html$ \index.php?id=$1&fileinclude=post

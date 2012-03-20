@@ -1,0 +1,5 @@
+<?php
+
+addusuario("admin","admin");
+?>
+

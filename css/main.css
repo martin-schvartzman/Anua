@@ -1,0 +1,185 @@
+*{
+border:0px;
+margin:0px;
+padding:0px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.agenda_fecha{
+text-align: left;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: bold;
+color: #FFBF00;
+padding-left: 5px;
+padding-right: 5px;
+width: 110px;
+}
+
+.agenda_descripcion {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+font-weight:bold;
+color: #06C;
+text-align:left;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 4px;
+line-height: 13px;
+}
+
+#agenda_barra_info {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #09C;
+margin-left: 10px;
+}
+
+#agenda{
+	margin-left:13px;
+}
+
+a{text-decoration:none;
+font-size:10px;
+}
+
+#main, #encabezado, #mainwrap{
+width:1000px;
+
+}
+#wrap1, #wrap2, #wrap3, #wrap3a, #wrap3b, #wrap4{
+float:left;
+}
+#wrap1,#wrap4,#wrap3,#wrap2{
+height:1275px;
+}
+#wrap1,#botonera,#buscador,#patrocinados1{
+width:185px;
+}
+#wrap4,#footer{
+width:815px;
+}
+#wrap2,#pageheader,#content,#pie{
+width:525px;
+}
+#wrap3a, #wrap3b{
+height:875px;
+}
+#wrap3a{
+width:205px;;
+}
+#wrap3b{
+background-image:url('/contenidos/frames/barra-derecha/home-derecha.png');
+width:59px;
+padding-left:26px;
+}
+
+#wrap3b a img{
+margin-bottom:7px;
+}
+
+#seccionmultimedia{
+height:240px;
+background-image:url('/contenidos/multimedio/multimedio.gif');
+}
+
+#side{
+height:645px;
+background-color:#ffffff;
+background-image:url('/contenidos/infobanner.gif');
+}
+
+#encabezado{
+height:155px;
+background-image:url('/contenidos/cabecera/encabezado.png');
+}
+
+#botonera{
+min-height:200px;
+}
+
+#buscador{
+min-height:140px;
+}
+
+#patrocinados1{
+min-height:200px;
+
+}
+#pageheader{
+height:150px;
+background-color:#ffffff;
+}
+
+#content{
+min-height:1035px;
+background-color:#ffffff;
+padding-top:5px;
+text-align:left;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#FF6600;
+}
+
+#pie{
+height:98px;
+padding-bottom:10px;
+}
+.odm , .odm a{
+height:19px;
+width:58px;
+}
+
+.odm{
+float:left;
+}
+
+.odm:hover{
+background-position:-58px 0px;
+}
+
+#homeposts{
+float:left;
+min-height:400px;
+width:150px;
+background-color:#ffffff;
+background-image:url('/contenidos/infobanner2.gif');
+}
+
+#patrocinados2{
+float:left;
+min-height:400px;
+width:140px;
+background-color:#ffffff;
+}
+
+
+.categoria{
+width:182px;
+height:25px;
+padding-left:41px;
+padding-top:3px;
+}
+
+.categoria:hover{
+background-position: -185px 0px;
+}
+
+.post{
+font-size:12px;
+padding:10px;
+text-align:left;
+width:510px;
+line-height:25px;
+color:#666666;
+}
+
+.texto{
+text-align:left;
+margin-left:-10px;
+}
+
+
+#volversubcat{
+color: #07399E;
+}
